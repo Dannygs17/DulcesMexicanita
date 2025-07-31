@@ -28,6 +28,10 @@ return [
     |
     */
 
+    //local — Este disco guarda archivos en storage/app. Aquí los archivos no son accesibles directamente desde el navegador.
+
+    //public — Este disco guarda archivos en storage/app/public y está configurado para ser accesible públicamente a través de una URL
+    
     'disks' => [
 
         'local' => [

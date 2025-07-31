@@ -10,6 +10,6 @@
   </div>
 
   <div class="mb-5">
-    @include('fragments.slides')
+   
   </div>
 @endsection

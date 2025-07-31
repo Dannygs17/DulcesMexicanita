@@ -18,19 +18,16 @@
 
         <form action="{{ route('login.handle') }}" method="POST">
             @csrf
-
             {{-- Email --}}
             <div class="mb-3">
                 <label for="email" class="form-label">Correo Electrónico</label>
                 <input type="email" class="form-control" name="email" id="email" required autofocus>
             </div>
-
             {{-- Password --}}
             <div class="mb-3">
                 <label for="password" class="form-label">Contraseña</label>
                 <input type="password" class="form-control" name="password" id="password" required>
             </div>
-
             {{-- Botón --}}
             <div class="d-grid">
                 <button type="submit" class="btn btn-primary">Iniciar Sesión</button>

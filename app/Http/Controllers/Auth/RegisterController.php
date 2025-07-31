@@ -23,12 +23,13 @@ class RegisterController extends Controller
     {
         //Validando los datos de registro del usuario
         request()->validate([
-            'name' => ['required', 'string', 'max:100'],
-            'email' => ['required', 'email', 'max:150'],
-            'password' => ['required', 'string', 'min:4', 'confirmed']
+            'name' => ['required', 'string', 'max:20'],
+            'email' => ['required', 'email', 'max:50'],
+            'password' => ['required', 'string', 'min:6', 'confirmed']
         ]);
 
         // crear el registro en la tabla users
+        // Laravel usa bcrypt para encriptar contraseñas usasmos Hash::make() para proteger la contraseña del usuario. 
        $user = User::create([
             'name' => request('name'),
             'email' => request('email'),

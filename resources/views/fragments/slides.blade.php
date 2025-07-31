@@ -1,13 +1,13 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
   <div class="carousel-inner rounded shadow-sm">
     <div class="carousel-item active">
-      <img src="/imgs/slides/Imagen1.jpg" class="d-block w-100" alt="Imagen 1" loading="lazy" style="object-fit: cover; height: 400px;">
+      <img src="{{ asset('imgs/slides/Imagen1.jpg') }}" class="d-block w-100" alt="Imagen 1" loading="lazy" style="object-fit: cover; height: 400px;">
     </div>
     <div class="carousel-item">
-      <img src="/imgs/slides/Imagen2.jpg" class="d-block w-100" alt="Imagen 2" loading="lazy" style="object-fit: cover; height: 400px;">
+      <img src="{{ asset('imgs/slides/Imagen2.jpg') }}" class="d-block w-100" alt="Imagen 2" loading="lazy" style="object-fit: cover; height: 400px;">
     </div>
     <div class="carousel-item">
-      <img src="/imgs/slides/Imagen3.jpg" class="d-block w-100" alt="Imagen 3" loading="lazy" style="object-fit: cover; height: 400px;">
+      <img src="{{ asset('imgs/slides/Imagen3.jpg') }}" class="d-block w-100" alt="Imagen 3" loading="lazy" style="object-fit: cover; height: 400px;">
     </div>
   </div>
 
